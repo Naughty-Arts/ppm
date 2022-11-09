@@ -14,8 +14,8 @@ int main()
 	canvas* canvas;
 	canvas_make(canvas, 32, 16);
 
-	c r = red;
-	c b = blue;
+	c r = cred;
+	c b = cblue;
 
 	for (int i = 8; i < 24; ++i)
 	{
