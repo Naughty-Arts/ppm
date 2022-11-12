@@ -4,5 +4,6 @@
 #include <canvas.h>
 
 void ppm3_write(FILE* out, Canvas *canvas);
+Canvas* ppm3_read(FILE* in);
 
 #endif

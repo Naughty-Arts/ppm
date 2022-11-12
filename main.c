@@ -38,4 +38,13 @@ int main()
 	FILE* out = fopen("canvas.ppm", "w");
 	ppm3_write(out, canvas);
 	fclose(out);
+
+	FILE* text_in = fopen("ppm_text.ppm", "r");
+	Canvas* text_result = ppm3_read(text_in);
+	fclose(text_in);
+
+	printf("Reading P3\n");
+	canvas_term(text_result);
+
+	return 0;
 }
